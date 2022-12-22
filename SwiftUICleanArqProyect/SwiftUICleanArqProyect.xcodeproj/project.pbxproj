@@ -31,6 +31,14 @@
 		D61B5FF929545379002D117F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FF729545379002D117F /* RootView.swift */; };
 		D61B5FFC295453A0002D117F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FFB295453A0002D117F /* HomeView.swift */; };
 		D61B5FFD295453A0002D117F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FFB295453A0002D117F /* HomeView.swift */; };
+		D61B600029545BFB002D117F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FFF29545BFB002D117F /* LoginUseCase.swift */; };
+		D61B600129545BFB002D117F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FFF29545BFB002D117F /* LoginUseCase.swift */; };
+		D61B600529546A07002D117F /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B600429546A07002D117F /* LoginRepositoryProtocol.swift */; };
+		D61B600629546A07002D117F /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B600429546A07002D117F /* LoginRepositoryProtocol.swift */; };
+		D61B600929546B02002D117F /* DefaultLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B600829546B02002D117F /* DefaultLoginRepository.swift */; };
+		D61B600A29546B02002D117F /* DefaultLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B600829546B02002D117F /* DefaultLoginRepository.swift */; };
+		D61B600C29546C20002D117F /* NetworkLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B600B29546C20002D117F /* NetworkLogin.swift */; };
+		D61B600D29546C20002D117F /* NetworkLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B600B29546C20002D117F /* NetworkLogin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,10 @@
 		D61B5FF429544F25002D117F /* Wrapper+KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wrapper+KeyChain.swift"; sourceTree = "<group>"; };
 		D61B5FF729545379002D117F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		D61B5FFB295453A0002D117F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D61B5FFF29545BFB002D117F /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		D61B600429546A07002D117F /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D61B600829546B02002D117F /* DefaultLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginRepository.swift; sourceTree = "<group>"; };
+		D61B600B29546C20002D117F /* NetworkLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +126,7 @@
 				D61B5FA7295442C9002D117F /* Data */,
 				D61B5FA6295442C2002D117F /* Domain */,
 				D61B5FA529544279002D117F /* Resources */,
-				D61B5FA22954423D002D117F /* UI */,
+				D61B5FA22954423D002D117F /* Presentation */,
 				D61B5FA12954418E002D117F /* System */,
 				D61B5F7429544101002D117F /* ContentView.swift */,
 				D61B5F7829544104002D117F /* Preview Content */,
@@ -138,13 +150,14 @@
 			path = System;
 			sourceTree = "<group>";
 		};
-		D61B5FA22954423D002D117F /* UI */ = {
+		D61B5FA22954423D002D117F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D61B60022954686C002D117F /* ViewModels */,
 				D61B5FA42954425E002D117F /* Components */,
 				D61B5FA329544257002D117F /* Views */,
 			);
-			path = UI;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		D61B5FA329544257002D117F /* Views */ = {
@@ -178,10 +191,9 @@
 		D61B5FA6295442C2002D117F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				D61B5FAE2954441B002D117F /* ViewModels */,
-				D61B5FAA295442FC002D117F /* Interactors */,
-				D61B5FA9295442E9002D117F /* Bussiness Logic */,
-				D61B5FA8295442E0002D117F /* Models */,
+				D61B600329546885002D117F /* Protocols */,
+				D61B5FAA295442FC002D117F /* UseCases */,
+				D61B5FA8295442E0002D117F /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -189,45 +201,42 @@
 		D61B5FA7295442C9002D117F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D61B600729546AEA002D117F /* Repositories */,
 				D61B5FAC29544316002D117F /* Network */,
-				D61B5FAB29544311002D117F /* Local */,
+				D61B5FAB29544311002D117F /* local */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		D61B5FA8295442E0002D117F /* Models */ = {
+		D61B5FA8295442E0002D117F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Models;
+			path = Entities;
 			sourceTree = "<group>";
 		};
-		D61B5FA9295442E9002D117F /* Bussiness Logic */ = {
+		D61B5FAA295442FC002D117F /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				D61B5FFF29545BFB002D117F /* LoginUseCase.swift */,
 			);
-			path = "Bussiness Logic";
+			path = UseCases;
 			sourceTree = "<group>";
 		};
-		D61B5FAA295442FC002D117F /* Interactors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interactors;
-			sourceTree = "<group>";
-		};
-		D61B5FAB29544311002D117F /* Local */ = {
+		D61B5FAB29544311002D117F /* local */ = {
 			isa = PBXGroup;
 			children = (
 				D61B5FDE29544CD8002D117F /* KeyChain */,
 				D61B5FDD29544CC5002D117F /* coreData */,
 			);
-			path = Local;
+			path = local;
 			sourceTree = "<group>";
 		};
 		D61B5FAC29544316002D117F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D61B600E29546C3C002D117F /* Common */,
+				D61B600B29546C20002D117F /* NetworkLogin.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -238,15 +247,6 @@
 				D61B5FD329544A39002D117F /* LoginView.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		D61B5FAE2954441B002D117F /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				D61B5FAF2954443D002D117F /* ViewRouter.swift */,
-				D61B5FC5295445D7002D117F /* AppState.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		D61B5FC9295446B3002D117F /* Extensions+Wrappers */ = {
@@ -297,6 +297,38 @@
 				D61B5FFB295453A0002D117F /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		D61B60022954686C002D117F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D61B5FAF2954443D002D117F /* ViewRouter.swift */,
+				D61B5FC5295445D7002D117F /* AppState.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D61B600329546885002D117F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D61B600429546A07002D117F /* LoginRepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D61B600729546AEA002D117F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D61B600829546B02002D117F /* DefaultLoginRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D61B600E29546C3C002D117F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,7 +452,11 @@
 				D61B5F7529544101002D117F /* ContentView.swift in Sources */,
 				D61B5FE129544CF6002D117F /* KeyChain.swift in Sources */,
 				D61B5F7329544101002D117F /* SwiftUICleanArqProyectApp.swift in Sources */,
+				D61B600029545BFB002D117F /* LoginUseCase.swift in Sources */,
+				D61B600529546A07002D117F /* LoginRepositoryProtocol.swift in Sources */,
 				D61B5F7F29544104002D117F /* SwiftUICleanArqProyect.xcdatamodeld in Sources */,
+				D61B600929546B02002D117F /* DefaultLoginRepository.swift in Sources */,
+				D61B600C29546C20002D117F /* NetworkLogin.swift in Sources */,
 				D61B5FCC295446DF002D117F /* General.swift in Sources */,
 				D61B5FF829545379002D117F /* RootView.swift in Sources */,
 				D61B5FF529544F25002D117F /* Wrapper+KeyChain.swift in Sources */,
@@ -433,10 +469,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61B600D29546C20002D117F /* NetworkLogin.swift in Sources */,
 				D61B5FEB29544E79002D117F /* SwiftUICleanArqProyectTests.swift in Sources */,
 				D61B5FFD295453A0002D117F /* HomeView.swift in Sources */,
+				D61B600A29546B02002D117F /* DefaultLoginRepository.swift in Sources */,
 				D61B5FF629544F25002D117F /* Wrapper+KeyChain.swift in Sources */,
+				D61B600129545BFB002D117F /* LoginUseCase.swift in Sources */,
 				D61B5FF929545379002D117F /* RootView.swift in Sources */,
+				D61B600629546A07002D117F /* LoginRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct SwiftUICleanArqProyectApp: App {
     let persistenceController = PersistenceController.shared  //instance of COreData
-    let appState: AppState = AppState() //estado de la App
+    let appState: AppState = AppState(loginUseCase: LoginUseCase()) //estado de la App: le inyectamos el Login Use Case
     
     var body: some Scene {
         WindowGroup {

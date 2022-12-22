@@ -21,35 +21,34 @@ final class AppState: ObservableObject {
     //here lo que necesitemos meter... credenciales login, datos globales etr
     @Published var statusLogin : LoginStatus = .none
     
-    //Token JWT con nuestro propio property wrapper que lee y graba en el KeyChain
-    @PersistenceKeyChain(key: ConstantsApp.CONST_TOKEN_ID_KEYCHAIN) var tokenJWT {
-        didSet {
-            #if DEBUG
-            print("Token Login: \(tokenJWT)")
-            #endif
-        }
+    //Dependences
+    private var loginUseCase: loginuserCaseProtocol //interactor for Login Operations
+    
+
+    // inicializadores
+    init(loginUseCase: loginuserCaseProtocol = LoginUseCase()){
+        self.loginUseCase = loginUseCase
     }
+    
+
     
     //valida la logica de JWT si está o no OK.
     func validateControlLogin(){
-        
-        let seconds = 4.0
-        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            //solo validamos que haya token, nada mas
-            if self.tokenJWT != "" {
+        Task{
+            if (await loginUseCase.validateToken()){
                 self.statusLogin = .success
-            } else{
+            } else {
                 self.statusLogin = .error
             }
         }
-        
-        
     }
     
     
     //cierre de session
     func closeSessionUser(){
-        tokenJWT = ""
-        statusLogin = .none
+        Task{
+            await loginUseCase.logout()
+            self.statusLogin = .none
+        }
     }
 }

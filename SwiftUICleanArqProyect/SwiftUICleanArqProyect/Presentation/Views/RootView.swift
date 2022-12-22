@@ -13,18 +13,16 @@ struct RootView: View {
     
     var body: some View {
         Group{
-            
             switch viewModelRouter.screen{
             case .splash :
                 SplashView()
             case .login:
                 LoginView()
-                    .transition(.scale)
+                    .transition(.slide)
             case .home:
                 HomeView()
                     .transition(.scale)
             }
-            
         }
         .onAppear{
             //Controlamos la session
