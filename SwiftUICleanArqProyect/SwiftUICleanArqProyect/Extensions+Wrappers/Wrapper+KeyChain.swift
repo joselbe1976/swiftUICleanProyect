@@ -7,7 +7,7 @@
 
 import Foundation
 
-//perisstencia en KeyChain
+//peristencia en KeyChain
 @propertyWrapper
 final class PersistenceKeyChain {
     private var key: String

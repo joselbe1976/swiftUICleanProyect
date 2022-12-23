@@ -33,15 +33,26 @@ final class LoginUseCase: loginuserCaseProtocol{
     
     //login in the app. Returns tokenJWT
     func loginApp(user: String, password: String) async -> Bool {
-        return true
+        
+        let token = await repo.loginApp(user: user, password: password)
+        
+        if token != "" {
+            KeyChain().saveKC(key: ConstantsApp.CONST_TOKEN_ID_KEYCHAIN, value: token)
+            return true
+        } else{
+            KeyChain().deleteKC(key: ConstantsApp.CONST_TOKEN_ID_KEYCHAIN)
+            return false
+        }
+        
+        
     }
     
     func validateToken() async -> Bool{
         //validamos si existe el token: Nota habría que controlar el tiemo de vida del token aqui... en produccion
         if KeyChain().loadKC(key: ConstantsApp.CONST_TOKEN_ID_KEYCHAIN) != ""{
-            return false
-        } else {
             return true
+        } else {
+            return false
         }
     }
     

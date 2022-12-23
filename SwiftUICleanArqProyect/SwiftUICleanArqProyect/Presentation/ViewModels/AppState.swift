@@ -13,6 +13,7 @@ enum LoginStatus{
     case none
     case success
     case error
+    case notValidate
 }
 
 
@@ -31,12 +32,13 @@ final class AppState: ObservableObject {
     }
     
 
-    
-    //valida la logica de JWT si está o no OK.
-    func validateControlLogin(){
+    //Login
+    @MainActor
+    func loginApp(user:String, pass:String){
         Task{
-            if (await loginUseCase.validateToken()){
-                self.statusLogin = .success
+            if (await loginUseCase.loginApp(user: user, password: pass)){
+                    self.statusLogin = .success
+                
             } else {
                 self.statusLogin = .error
             }
@@ -44,7 +46,23 @@ final class AppState: ObservableObject {
     }
     
     
+    
+    //valida la logica de JWT si está o no OK.
+    @MainActor
+    func validateControlLogin(){
+        Task{
+            if (await loginUseCase.validateToken()){
+                    self.statusLogin = .success
+                
+            } else {
+                self.statusLogin = .notValidate
+            }
+        }
+    }
+    
+    
     //cierre de session
+    @MainActor
     func closeSessionUser(){
         Task{
             await loginUseCase.logout()

@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject private var appState: AppState
+    
     var body: some View {
-        Text("Esto es la Home")
+        VStack{
+            Button {
+                appState.closeSessionUser()
+            } label: {
+                Text("Cerrar Session")
+            }
+
+        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(AppState())
     }
 }
