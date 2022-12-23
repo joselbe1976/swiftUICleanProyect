@@ -1,0 +1,55 @@
+//
+//  DataTest.swift
+//  SwiftUICleanArqProyectTests
+//
+//  Created by jose.bustos.local on 23/12/22.
+//
+
+import XCTest
+@testable import SwiftUICleanArqProyect
+
+final class DataTest: XCTestCase {
+
+    override func setUpWithError() throws {
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+    }
+
+    override func tearDownWithError() throws {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+
+    func testKeyChainLibrary()  throws  {
+        
+        let KC = KeyChain()
+        XCTAssertNotNil(KC)
+        
+        let save = KC.saveKC(key: "Test", value: "123")
+        XCTAssertEqual(save, true)
+        
+        let value = KC.loadKC(key: "Test")
+        if let valor = value {
+            XCTAssertEqual(valor, "123")
+        }
+    
+        XCTAssertNoThrow(KC.deleteKC(key: "Test"))
+    }
+    
+    func testNetWorkLogin() async throws  {
+        
+        let obj1 = NetworkLoginFake()
+        XCTAssertNotNil(obj1)
+        
+        let obj2 = NetworkLogin()
+        XCTAssertNotNil(obj2)
+        
+        let token1 = await obj1.loginApp(user: "", password: "")
+        XCTAssertNotEqual(token1, "")
+        
+        //login Real error
+        let token2 = await obj2.loginApp(user: "zzz", password: "zzzz")
+        XCTAssertEqual(token2, "")
+        
+        
+        }
+
+}

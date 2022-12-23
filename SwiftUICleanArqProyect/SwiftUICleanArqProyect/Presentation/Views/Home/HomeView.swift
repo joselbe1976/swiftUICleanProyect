@@ -17,6 +17,7 @@ struct HomeView: View {
             } label: {
                 Text("Cerrar Session")
             }
+            .id(1)
 
         }
     }

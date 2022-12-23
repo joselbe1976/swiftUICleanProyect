@@ -6,6 +6,8 @@
 //
 
 import XCTest
+@testable import SwiftUICleanArqProyect
+
 
 final class SwiftUICleanArqProyectTests: XCTestCase {
 

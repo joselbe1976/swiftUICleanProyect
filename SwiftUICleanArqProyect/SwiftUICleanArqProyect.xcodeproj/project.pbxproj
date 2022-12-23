@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D61B5F7329544101002D117F /* SwiftUICleanArqProyectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5F7229544101002D117F /* SwiftUICleanArqProyectApp.swift */; };
-		D61B5F7529544101002D117F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5F7429544101002D117F /* ContentView.swift */; };
 		D61B5F7729544104002D117F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61B5F7629544104002D117F /* Assets.xcassets */; };
 		D61B5F7A29544104002D117F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61B5F7929544104002D117F /* Preview Assets.xcassets */; };
 		D61B5F7C29544104002D117F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5F7B29544104002D117F /* Persistence.swift */; };
@@ -40,12 +39,26 @@
 		D61B600C29546C20002D117F /* NetworkLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B600B29546C20002D117F /* NetworkLogin.swift */; };
 		D61B600D29546C20002D117F /* NetworkLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B600B29546C20002D117F /* NetworkLogin.swift */; };
 		D629FB7C29558C2A00EA2853 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB7B29558C2A00EA2853 /* EndPoints.swift */; };
-		D629FB7F29558CDF00EA2853 /* NetworkerCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB7E29558CDF00EA2853 /* NetworkerCombine.swift */; };
-		D629FB8029558CDF00EA2853 /* NetworkerCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB7E29558CDF00EA2853 /* NetworkerCombine.swift */; };
 		D629FB8229558D9F00EA2853 /* HTTPMehthods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB8129558D9F00EA2853 /* HTTPMehthods.swift */; };
 		D629FB8329558D9F00EA2853 /* HTTPMehthods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB8129558D9F00EA2853 /* HTTPMehthods.swift */; };
 		D629FB8529558FA200EA2853 /* HTTPResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB8429558FA200EA2853 /* HTTPResponseCodes.swift */; };
 		D629FB8629558FA200EA2853 /* HTTPResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB8429558FA200EA2853 /* HTTPResponseCodes.swift */; };
+		D629FB8C2955A2C300EA2853 /* DomainTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB8B2955A2C300EA2853 /* DomainTest.swift */; };
+		D629FB8D2955A42100EA2853 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FCB295446DF002D117F /* General.swift */; };
+		D629FB8E2955A45E00EA2853 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FE029544CF6002D117F /* KeyChain.swift */; };
+		D629FB8F2955A46200EA2853 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5F7B29544104002D117F /* Persistence.swift */; };
+		D629FB902955A48300EA2853 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FAF2954443D002D117F /* ViewRouter.swift */; };
+		D629FB912955A48700EA2853 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FC5295445D7002D117F /* AppState.swift */; };
+		D629FB922955A48B00EA2853 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FB3295444C1002D117F /* SplashView.swift */; };
+		D629FB932955A49200EA2853 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FD329544A39002D117F /* LoginView.swift */; };
+		D629FB942955A49900EA2853 /* SwiftUICleanArqProyectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5F7229544101002D117F /* SwiftUICleanArqProyectApp.swift */; };
+		D629FB952955A4AF00EA2853 /* SwiftUICleanArqProyect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D61B5F7D29544104002D117F /* SwiftUICleanArqProyect.xcdatamodeld */; };
+		D629FB962955A4BD00EA2853 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB7B29558C2A00EA2853 /* EndPoints.swift */; };
+		D629FB972955A4D100EA2853 /* extension+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5FCF2954473A002D117F /* extension+Colors.swift */; };
+		D629FB992955CEF500EA2853 /* DataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB982955CEF500EA2853 /* DataTest.swift */; };
+		D629FB9B2955D0E600EA2853 /* OtherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB9A2955D0E600EA2853 /* OtherTest.swift */; };
+		D629FB9D2955D2EB00EA2853 /* ViewModelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB9C2955D2EB00EA2853 /* ViewModelsTest.swift */; };
+		D629FB9F2955D69B00EA2853 /* ViewsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB9E2955D69B00EA2853 /* ViewsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +74,6 @@
 /* Begin PBXFileReference section */
 		D61B5F6F29544101002D117F /* SwiftUICleanArqProyect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICleanArqProyect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61B5F7229544101002D117F /* SwiftUICleanArqProyectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICleanArqProyectApp.swift; sourceTree = "<group>"; };
-		D61B5F7429544101002D117F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D61B5F7629544104002D117F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D61B5F7929544104002D117F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D61B5F7B29544104002D117F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -86,9 +98,13 @@
 		D61B600829546B02002D117F /* DefaultLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginRepository.swift; sourceTree = "<group>"; };
 		D61B600B29546C20002D117F /* NetworkLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogin.swift; sourceTree = "<group>"; };
 		D629FB7B29558C2A00EA2853 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
-		D629FB7E29558CDF00EA2853 /* NetworkerCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkerCombine.swift; sourceTree = "<group>"; };
 		D629FB8129558D9F00EA2853 /* HTTPMehthods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMehthods.swift; sourceTree = "<group>"; };
 		D629FB8429558FA200EA2853 /* HTTPResponseCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseCodes.swift; sourceTree = "<group>"; };
+		D629FB8B2955A2C300EA2853 /* DomainTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTest.swift; sourceTree = "<group>"; };
+		D629FB982955CEF500EA2853 /* DataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTest.swift; sourceTree = "<group>"; };
+		D629FB9A2955D0E600EA2853 /* OtherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTest.swift; sourceTree = "<group>"; };
+		D629FB9C2955D2EB00EA2853 /* ViewModelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsTest.swift; sourceTree = "<group>"; };
+		D629FB9E2955D69B00EA2853 /* ViewsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +155,6 @@
 				D61B5FA529544279002D117F /* Resources */,
 				D61B5FA22954423D002D117F /* Presentation */,
 				D61B5FA12954418E002D117F /* System */,
-				D61B5F7429544101002D117F /* ContentView.swift */,
 				D61B5F7829544104002D117F /* Preview Content */,
 			);
 			path = SwiftUICleanArqProyect;
@@ -342,7 +357,6 @@
 		D61B600E29546C3C002D117F /* BaseNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				D629FB7D29558CC200EA2853 /* Combine */,
 				D629FB7B29558C2A00EA2853 /* EndPoints.swift */,
 				D629FB8129558D9F00EA2853 /* HTTPMehthods.swift */,
 				D629FB8429558FA200EA2853 /* HTTPResponseCodes.swift */,
@@ -350,17 +364,10 @@
 			path = BaseNetwork;
 			sourceTree = "<group>";
 		};
-		D629FB7D29558CC200EA2853 /* Combine */ = {
-			isa = PBXGroup;
-			children = (
-				D629FB7E29558CDF00EA2853 /* NetworkerCombine.swift */,
-			);
-			path = Combine;
-			sourceTree = "<group>";
-		};
 		D629FB87295595C000EA2853 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D629FB8B2955A2C300EA2853 /* DomainTest.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -368,6 +375,7 @@
 		D629FB88295595CB00EA2853 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D629FB982955CEF500EA2853 /* DataTest.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -375,6 +383,8 @@
 		D629FB89295595D200EA2853 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D629FB9C2955D2EB00EA2853 /* ViewModelsTest.swift */,
+				D629FB9E2955D69B00EA2853 /* ViewsTest.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -382,6 +392,7 @@
 		D629FB8A295595ED00EA2853 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				D629FB9A2955D0E600EA2853 /* OtherTest.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -506,7 +517,6 @@
 				D629FB7C29558C2A00EA2853 /* EndPoints.swift in Sources */,
 				D61B5F7C29544104002D117F /* Persistence.swift in Sources */,
 				D61B5FC6295445D7002D117F /* AppState.swift in Sources */,
-				D61B5F7529544101002D117F /* ContentView.swift in Sources */,
 				D61B5FE129544CF6002D117F /* KeyChain.swift in Sources */,
 				D61B5F7329544101002D117F /* SwiftUICleanArqProyectApp.swift in Sources */,
 				D61B600029545BFB002D117F /* LoginUseCase.swift in Sources */,
@@ -520,7 +530,6 @@
 				D61B5FF529544F25002D117F /* Wrapper+KeyChain.swift in Sources */,
 				D61B5FD429544A39002D117F /* LoginView.swift in Sources */,
 				D61B5FB4295444C1002D117F /* SplashView.swift in Sources */,
-				D629FB7F29558CDF00EA2853 /* NetworkerCombine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,14 +540,29 @@
 				D629FB8629558FA200EA2853 /* HTTPResponseCodes.swift in Sources */,
 				D61B600D29546C20002D117F /* NetworkLogin.swift in Sources */,
 				D61B5FEB29544E79002D117F /* SwiftUICleanArqProyectTests.swift in Sources */,
+				D629FB8C2955A2C300EA2853 /* DomainTest.swift in Sources */,
+				D629FB9D2955D2EB00EA2853 /* ViewModelsTest.swift in Sources */,
+				D629FB9B2955D0E600EA2853 /* OtherTest.swift in Sources */,
 				D61B5FFD295453A0002D117F /* HomeView.swift in Sources */,
 				D61B600A29546B02002D117F /* DefaultLoginRepository.swift in Sources */,
+				D629FB912955A48700EA2853 /* AppState.swift in Sources */,
 				D61B5FF629544F25002D117F /* Wrapper+KeyChain.swift in Sources */,
+				D629FB902955A48300EA2853 /* ViewRouter.swift in Sources */,
 				D61B600129545BFB002D117F /* LoginUseCase.swift in Sources */,
+				D629FB962955A4BD00EA2853 /* EndPoints.swift in Sources */,
+				D629FB972955A4D100EA2853 /* extension+Colors.swift in Sources */,
+				D629FB8D2955A42100EA2853 /* General.swift in Sources */,
+				D629FB8F2955A46200EA2853 /* Persistence.swift in Sources */,
 				D61B5FF929545379002D117F /* RootView.swift in Sources */,
 				D629FB8329558D9F00EA2853 /* HTTPMehthods.swift in Sources */,
+				D629FB9F2955D69B00EA2853 /* ViewsTest.swift in Sources */,
+				D629FB8E2955A45E00EA2853 /* KeyChain.swift in Sources */,
+				D629FB942955A49900EA2853 /* SwiftUICleanArqProyectApp.swift in Sources */,
 				D61B600629546A07002D117F /* LoginRepositoryProtocol.swift in Sources */,
-				D629FB8029558CDF00EA2853 /* NetworkerCombine.swift in Sources */,
+				D629FB992955CEF500EA2853 /* DataTest.swift in Sources */,
+				D629FB932955A49200EA2853 /* LoginView.swift in Sources */,
+				D629FB952955A4AF00EA2853 /* SwiftUICleanArqProyect.xcdatamodeld in Sources */,
+				D629FB922955A48B00EA2853 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
