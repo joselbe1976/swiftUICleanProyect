@@ -43,9 +43,15 @@ final class ViewModelsTest: XCTestCase {
     func testViewRouterViewModel() async throws  {
         let vm = ViewRouter()
         XCTAssertNotNil(vm)
-        
         XCTAssertEqual(vm.screen, .splash)
- 
+    }
+    
+    func testHeroiewModel() async throws  {
+        let vm = HerosViewModel(useCase: HerosUseCaseFake())
+        XCTAssertNotNil(vm)
+        XCTAssertEqual(vm.herosData.count, 0)
+        await vm.getHeros()
+
         
     }
 

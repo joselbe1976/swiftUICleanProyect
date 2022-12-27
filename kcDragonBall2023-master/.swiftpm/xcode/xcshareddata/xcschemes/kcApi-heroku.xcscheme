@@ -74,7 +74,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/jose.bustos.local/Desktop/kcDragonBall2023-master"
+      customWorkingDirectory = "/Users/jose.bustos.local/Desktop/@JoselbeData/Trabajo/01- Babel/iOS cosas/swiftUICleanProyect/kcDragonBall2023-master"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"

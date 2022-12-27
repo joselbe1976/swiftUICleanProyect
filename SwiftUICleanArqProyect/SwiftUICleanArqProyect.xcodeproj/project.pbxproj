@@ -59,6 +59,20 @@
 		D629FB9B2955D0E600EA2853 /* OtherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB9A2955D0E600EA2853 /* OtherTest.swift */; };
 		D629FB9D2955D2EB00EA2853 /* ViewModelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB9C2955D2EB00EA2853 /* ViewModelsTest.swift */; };
 		D629FB9F2955D69B00EA2853 /* ViewsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629FB9E2955D69B00EA2853 /* ViewsTest.swift */; };
+		D64938D7295B0D7D0059404D /* HerosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938D6295B0D7D0059404D /* HerosView.swift */; };
+		D64938D8295B0D7D0059404D /* HerosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938D6295B0D7D0059404D /* HerosView.swift */; };
+		D64938DA295B1A370059404D /* HerosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938D9295B1A370059404D /* HerosModel.swift */; };
+		D64938DB295B1A370059404D /* HerosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938D9295B1A370059404D /* HerosModel.swift */; };
+		D64938DD295B1B1F0059404D /* HerosRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938DC295B1B1F0059404D /* HerosRepositoryProtocol.swift */; };
+		D64938DE295B1B1F0059404D /* HerosRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938DC295B1B1F0059404D /* HerosRepositoryProtocol.swift */; };
+		D64938E0295B1B4F0059404D /* HerosUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938DF295B1B4F0059404D /* HerosUserCase.swift */; };
+		D64938E1295B1B4F0059404D /* HerosUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938DF295B1B4F0059404D /* HerosUserCase.swift */; };
+		D64938E3295B1B9B0059404D /* NetworkHeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938E2295B1B9B0059404D /* NetworkHeros.swift */; };
+		D64938E4295B1B9B0059404D /* NetworkHeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938E2295B1B9B0059404D /* NetworkHeros.swift */; };
+		D64938E6295B1F010059404D /* DefaultHerosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938E5295B1F010059404D /* DefaultHerosRepository.swift */; };
+		D64938E7295B1F010059404D /* DefaultHerosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938E5295B1F010059404D /* DefaultHerosRepository.swift */; };
+		D64938E9295B20D60059404D /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938E8295B20D60059404D /* HerosViewModel.swift */; };
+		D64938EA295B20D60059404D /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64938E8295B20D60059404D /* HerosViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +120,13 @@
 		D629FB9A2955D0E600EA2853 /* OtherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTest.swift; sourceTree = "<group>"; };
 		D629FB9C2955D2EB00EA2853 /* ViewModelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsTest.swift; sourceTree = "<group>"; };
 		D629FB9E2955D69B00EA2853 /* ViewsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsTest.swift; sourceTree = "<group>"; };
+		D64938D6295B0D7D0059404D /* HerosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosView.swift; sourceTree = "<group>"; };
+		D64938D9295B1A370059404D /* HerosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosModel.swift; sourceTree = "<group>"; };
+		D64938DC295B1B1F0059404D /* HerosRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D64938DF295B1B4F0059404D /* HerosUserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosUserCase.swift; sourceTree = "<group>"; };
+		D64938E2295B1B9B0059404D /* NetworkHeros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHeros.swift; sourceTree = "<group>"; };
+		D64938E5295B1F010059404D /* DefaultHerosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHerosRepository.swift; sourceTree = "<group>"; };
+		D64938E8295B20D60059404D /* HerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +214,7 @@
 			children = (
 				D61B5FB3295444C1002D117F /* SplashView.swift */,
 				D61B5FF729545379002D117F /* RootView.swift */,
+				D64938D5295B0D6E0059404D /* Heros */,
 				D61B5FFA29545385002D117F /* Home */,
 				D61B5FAD295443F1002D117F /* Login */,
 			);
@@ -239,6 +261,7 @@
 		D61B5FA8295442E0002D117F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				D64938D9295B1A370059404D /* HerosModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -247,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				D61B5FFF29545BFB002D117F /* LoginUseCase.swift */,
+				D64938DF295B1B4F0059404D /* HerosUserCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -265,6 +289,7 @@
 			children = (
 				D61B600E29546C3C002D117F /* BaseNetwork */,
 				D61B600B29546C20002D117F /* NetworkLogin.swift */,
+				D64938E2295B1B9B0059404D /* NetworkHeros.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -336,6 +361,7 @@
 			children = (
 				D61B5FAF2954443D002D117F /* ViewRouter.swift */,
 				D61B5FC5295445D7002D117F /* AppState.swift */,
+				D64938E8295B20D60059404D /* HerosViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -344,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				D61B600429546A07002D117F /* LoginRepositoryProtocol.swift */,
+				D64938DC295B1B1F0059404D /* HerosRepositoryProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -352,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				D61B600829546B02002D117F /* DefaultLoginRepository.swift */,
+				D64938E5295B1F010059404D /* DefaultHerosRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -397,6 +425,14 @@
 				D629FB9A2955D0E600EA2853 /* OtherTest.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		D64938D5295B0D6E0059404D /* Heros */ = {
+			isa = PBXGroup;
+			children = (
+				D64938D6295B0D7D0059404D /* HerosView.swift */,
+			);
+			path = Heros;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +553,7 @@
 				D61B5FFC295453A0002D117F /* HomeView.swift in Sources */,
 				D61B5FD02954473A002D117F /* extension+Colors.swift in Sources */,
 				D629FB7C29558C2A00EA2853 /* EndPoints.swift in Sources */,
+				D64938DA295B1A370059404D /* HerosModel.swift in Sources */,
 				D61B5F7C29544104002D117F /* Persistence.swift in Sources */,
 				D61B5FC6295445D7002D117F /* AppState.swift in Sources */,
 				D61B5FE129544CF6002D117F /* KeyChain.swift in Sources */,
@@ -524,14 +561,20 @@
 				D61B600029545BFB002D117F /* LoginUseCase.swift in Sources */,
 				D629FB8529558FA200EA2853 /* HTTPResponseCodes.swift in Sources */,
 				D61B600529546A07002D117F /* LoginRepositoryProtocol.swift in Sources */,
+				D64938E3295B1B9B0059404D /* NetworkHeros.swift in Sources */,
 				D61B5F7F29544104002D117F /* SwiftUICleanArqProyect.xcdatamodeld in Sources */,
 				D61B600929546B02002D117F /* DefaultLoginRepository.swift in Sources */,
 				D61B600C29546C20002D117F /* NetworkLogin.swift in Sources */,
+				D64938E6295B1F010059404D /* DefaultHerosRepository.swift in Sources */,
+				D64938D7295B0D7D0059404D /* HerosView.swift in Sources */,
 				D61B5FCC295446DF002D117F /* General.swift in Sources */,
+				D64938E0295B1B4F0059404D /* HerosUserCase.swift in Sources */,
 				D61B5FF829545379002D117F /* RootView.swift in Sources */,
+				D64938E9295B20D60059404D /* HerosViewModel.swift in Sources */,
 				D61B5FF529544F25002D117F /* Wrapper+KeyChain.swift in Sources */,
 				D61B5FD429544A39002D117F /* LoginView.swift in Sources */,
 				D61B5FB4295444C1002D117F /* SplashView.swift in Sources */,
+				D64938DD295B1B1F0059404D /* HerosRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,15 +597,22 @@
 				D629FB962955A4BD00EA2853 /* EndPoints.swift in Sources */,
 				D629FB972955A4D100EA2853 /* extension+Colors.swift in Sources */,
 				D629FB8D2955A42100EA2853 /* General.swift in Sources */,
+				D64938D8295B0D7D0059404D /* HerosView.swift in Sources */,
 				D629FB8F2955A46200EA2853 /* Persistence.swift in Sources */,
 				D61B5FF929545379002D117F /* RootView.swift in Sources */,
+				D64938E1295B1B4F0059404D /* HerosUserCase.swift in Sources */,
+				D64938DE295B1B1F0059404D /* HerosRepositoryProtocol.swift in Sources */,
 				D629FB8329558D9F00EA2853 /* HTTPMehthods.swift in Sources */,
 				D629FB9F2955D69B00EA2853 /* ViewsTest.swift in Sources */,
 				D629FB8E2955A45E00EA2853 /* KeyChain.swift in Sources */,
+				D64938E4295B1B9B0059404D /* NetworkHeros.swift in Sources */,
 				D629FB942955A49900EA2853 /* SwiftUICleanArqProyectApp.swift in Sources */,
 				D61B600629546A07002D117F /* LoginRepositoryProtocol.swift in Sources */,
 				D629FB992955CEF500EA2853 /* DataTest.swift in Sources */,
 				D629FB932955A49200EA2853 /* LoginView.swift in Sources */,
+				D64938EA295B20D60059404D /* HerosViewModel.swift in Sources */,
+				D64938DB295B1A370059404D /* HerosModel.swift in Sources */,
+				D64938E7295B1F010059404D /* DefaultHerosRepository.swift in Sources */,
 				D629FB952955A4AF00EA2853 /* SwiftUICleanArqProyect.xcdatamodeld in Sources */,
 				D629FB922955A48B00EA2853 /* SplashView.swift in Sources */,
 			);

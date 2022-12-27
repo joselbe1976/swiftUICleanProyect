@@ -50,6 +50,34 @@ final class DataTest: XCTestCase {
         XCTAssertEqual(token2, "")
         
         
-        }
+    }
+    
+    
+    func testNetWorkHeros() async throws  {
+        let obj1 = NetworkHerosFake()
+        XCTAssertNotNil(obj1)
+        let obj2 = NetworkHeros()
+        XCTAssertNotNil(obj2)
+        
+        let data1 = await obj1.getHeros(name: "")
+        XCTAssertNotNil(data1)
+        
+        
+        //login de verdad y pedimos los heroes
+        
+        let login = NetworkLogin()
+        let token = await login.loginApp(user: "bejl@babel.es", password: "abcdef")
+        
+        // guardamos en el keyChain
+        let KC = KeyChain()
+        XCTAssertNotNil(KC)
+        KC.saveKC(key: ConstantsApp.CONST_TOKEN_ID_KEYCHAIN, value: token)
+        
+        //lanzmaos la carga de heros
+        let data2 = await obj2.getHeros(name: "")
+        XCTAssertNotNil(data2)
+        print("Datos real => \(data2.count)")
+        
+    }
 
 }

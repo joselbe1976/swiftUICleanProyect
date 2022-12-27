@@ -70,5 +70,32 @@ final class DomainTest: XCTestCase {
         XCTAssertEqual(jwt, "")
         
     }
+    
+    func testModels() throws {
+        let modelo = HeroModelResponse(id: UUID(), favorite: false, name: "Batman", description: "El mejor", photo: "")
+        XCTAssertNotNil(modelo)
+        XCTAssertEqual(modelo.name, "Batman")
+        
+        let request = HeroModelRequest(name: "Goku")
+        XCTAssertNotNil(request)
+        
+    }
+    
+    
+    func testHeroFake() async throws  {
+       let uc =  HerosUseCaseFake()
+        XCTAssertNotNil(uc)
+        let model = await uc.getHeros(name: "")
+        XCTAssertNotNil(model)
+        XCTAssertEqual(model.count, 2)
+        
+    }
+    func testHeroReal() async throws  {
+        let uc =  HerosUseCase(repo: DefaultHerosRepositoryFake())
+         XCTAssertNotNil(uc)
+         let model = await uc.getHeros(name: "")
+         XCTAssertNotNil(model)
+         XCTAssertEqual(model.count, 2)
+    }
 
 }

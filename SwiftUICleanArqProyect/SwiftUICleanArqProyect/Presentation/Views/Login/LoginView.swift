@@ -10,8 +10,8 @@ import SwiftUI
 struct LoginView: View {
     @EnvironmentObject private var appState: AppState
     
-    @State private var user:String = "" //bejl@babel.es
-    @State private var pass:String = "" //abcdef
+    @State private var user:String = "bejl@babel.es" //bejl@babel.es
+    @State private var pass:String = "abcdef" //abcdef
     
     var body: some View {
         VStack{
@@ -22,13 +22,14 @@ struct LoginView: View {
                 }
                 .autocorrectionDisabled()
                 .textInputAutocapitalization(.never)
+                .id(3)
                 
                 TextField(text: $pass) {
                     Text("Clave")
                 }
                 .autocorrectionDisabled()
                 .textInputAutocapitalization(.never)
-                
+                .id(4)
                 
                 Button {
                     appState.loginApp(user: user, pass: pass)
@@ -36,13 +37,13 @@ struct LoginView: View {
                     Text("Login")
                     
                 }
+                .id(2)
 
                 if appState.statusLogin ==  .error {
                     Text("Error en el login")
                 }
             }
-           
-           
+            .id(1)
         }
     }
 }
