@@ -46,7 +46,8 @@ final class ViewsTest: XCTestCase {
         //ejecutamos el boton de la vista
         let boton = try view.inspect().find(viewWithId: 1)
         XCTAssertNotNil(boton)
-        try boton.button().tap() //ejecutamos elboton
+        XCTAssertNoThrow(try boton.button().tap()) //ejecutamos elboton
+        
         
 
         

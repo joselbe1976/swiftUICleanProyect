@@ -97,6 +97,7 @@
 		D61B600429546A07002D117F /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
 		D61B600829546B02002D117F /* DefaultLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginRepository.swift; sourceTree = "<group>"; };
 		D61B600B29546C20002D117F /* NetworkLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogin.swift; sourceTree = "<group>"; };
+		D62189ED295AF64F00928FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D629FB7B29558C2A00EA2853 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		D629FB8129558D9F00EA2853 /* HTTPMehthods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMehthods.swift; sourceTree = "<group>"; };
 		D629FB8429558FA200EA2853 /* HTTPResponseCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseCodes.swift; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 		D61B5F7129544101002D117F /* SwiftUICleanArqProyect */ = {
 			isa = PBXGroup;
 			children = (
+				D62189ED295AF64F00928FC0 /* Info.plist */,
 				D61B5FCA295446CE002D117F /* Constants */,
 				D61B5FC9295446B3002D117F /* Extensions+Wrappers */,
 				D61B5FA7295442C9002D117F /* Data */,
@@ -714,6 +716,7 @@
 				DEVELOPMENT_TEAM = L27GL65S5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUICleanArqProyect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -743,6 +746,7 @@
 				DEVELOPMENT_TEAM = L27GL65S5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUICleanArqProyect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
