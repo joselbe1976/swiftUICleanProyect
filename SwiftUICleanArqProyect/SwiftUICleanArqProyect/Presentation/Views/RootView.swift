@@ -22,6 +22,10 @@ struct RootView: View {
             case .home:
                 HomeView()
                     .transition(.scale)
+            case .error:
+                VStack(){
+                    Text("Error de seguridad con el servidor y su certificado")
+                }
             }
         }
         .onAppear{
@@ -29,7 +33,12 @@ struct RootView: View {
             appState.validateControlLogin()
         }
         .onChange(of: appState.statusLogin, perform: { newValue in
-            if newValue != .success{
+            if newValue == .error{
+                withAnimation {
+                    viewModelRouter.screen = .error // SSL Pining Error
+                }
+            }
+            else if newValue != .success{
                 withAnimation {
                     viewModelRouter.screen = .login
                 }

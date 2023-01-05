@@ -12,9 +12,14 @@ enum Screen {
     case login
     case splash
     case home
+    case error
 }
 
 // Clase router inicial de la App
 final class ViewRouter: ObservableObject {
     @Published var screen: Screen = .splash
+    
+    init(){
+        
+    }
 }

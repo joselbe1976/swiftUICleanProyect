@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31ACF5342966D9980012ECF8 /* SSLPiningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ACF5332966D9980012ECF8 /* SSLPiningService.swift */; };
+		31ACF5352966D9980012ECF8 /* SSLPiningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ACF5332966D9980012ECF8 /* SSLPiningService.swift */; };
 		D61B5F7329544101002D117F /* SwiftUICleanArqProyectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B5F7229544101002D117F /* SwiftUICleanArqProyectApp.swift */; };
 		D61B5F7729544104002D117F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61B5F7629544104002D117F /* Assets.xcassets */; };
 		D61B5F7A29544104002D117F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61B5F7929544104002D117F /* Preview Assets.xcassets */; };
@@ -86,6 +88,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31ACF5332966D9980012ECF8 /* SSLPiningService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPiningService.swift; sourceTree = "<group>"; };
 		D61B5F6F29544101002D117F /* SwiftUICleanArqProyect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICleanArqProyect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61B5F7229544101002D117F /* SwiftUICleanArqProyectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICleanArqProyectApp.swift; sourceTree = "<group>"; };
 		D61B5F7629544104002D117F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -390,6 +393,7 @@
 				D629FB7B29558C2A00EA2853 /* EndPoints.swift */,
 				D629FB8129558D9F00EA2853 /* HTTPMehthods.swift */,
 				D629FB8429558FA200EA2853 /* HTTPResponseCodes.swift */,
+				31ACF5332966D9980012ECF8 /* SSLPiningService.swift */,
 			);
 			path = BaseNetwork;
 			sourceTree = "<group>";
@@ -569,6 +573,7 @@
 				D64938D7295B0D7D0059404D /* HerosView.swift in Sources */,
 				D61B5FCC295446DF002D117F /* General.swift in Sources */,
 				D64938E0295B1B4F0059404D /* HerosUserCase.swift in Sources */,
+				31ACF5342966D9980012ECF8 /* SSLPiningService.swift in Sources */,
 				D61B5FF829545379002D117F /* RootView.swift in Sources */,
 				D64938E9295B20D60059404D /* HerosViewModel.swift in Sources */,
 				D61B5FF529544F25002D117F /* Wrapper+KeyChain.swift in Sources */,
@@ -601,6 +606,7 @@
 				D629FB8F2955A46200EA2853 /* Persistence.swift in Sources */,
 				D61B5FF929545379002D117F /* RootView.swift in Sources */,
 				D64938E1295B1B4F0059404D /* HerosUserCase.swift in Sources */,
+				31ACF5352966D9980012ECF8 /* SSLPiningService.swift in Sources */,
 				D64938DE295B1B1F0059404D /* HerosRepositoryProtocol.swift in Sources */,
 				D629FB8329558D9F00EA2853 /* HTTPMehthods.swift in Sources */,
 				D629FB9F2955D69B00EA2853 /* ViewsTest.swift in Sources */,
@@ -772,6 +778,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -802,6 +809,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -821,10 +829,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L27GL65S5Y;
+				DEVELOPMENT_TEAM = AH9SPD7BPD;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.babel.swiftUI.SwiftUICleanArqProyectTests;
+				PRODUCT_BUNDLE_IDENTIFIER = es.equilibrha.arquetipoSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -839,10 +848,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L27GL65S5Y;
+				DEVELOPMENT_TEAM = AH9SPD7BPD;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.babel.swiftUI.SwiftUICleanArqProyectTests;
+				PRODUCT_BUNDLE_IDENTIFIER = es.equilibrha.arquetipoSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

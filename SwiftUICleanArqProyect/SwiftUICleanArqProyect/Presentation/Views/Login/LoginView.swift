@@ -10,8 +10,8 @@ import SwiftUI
 struct LoginView: View {
     @EnvironmentObject private var appState: AppState
     
-    @State private var user:String = "bejl@babel.es" //bejl@babel.es
-    @State private var pass:String = "abcdef" //abcdef
+    @State private var user:String = "bejl@keepcoding.es"
+    @State private var pass:String = "123456"
     
     var body: some View {
         VStack{

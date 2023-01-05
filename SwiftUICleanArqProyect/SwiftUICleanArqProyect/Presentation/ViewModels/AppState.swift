@@ -29,6 +29,7 @@ final class AppState: ObservableObject {
     // inicializadores
     init(loginUseCase: loginuserCaseProtocol = LoginUseCase()){
         self.loginUseCase = loginUseCase
+    
     }
     
 
@@ -41,6 +42,7 @@ final class AppState: ObservableObject {
                 
             } else {
                 self.statusLogin = .error
+                
             }
         }
     }
@@ -51,11 +53,25 @@ final class AppState: ObservableObject {
     @MainActor
     func validateControlLogin(){
         Task{
-            if (await loginUseCase.validateToken()){
+            
+            //SSL Pining to start de App
+            let success = try await SSLPining().DomainPining()
+            
+            if !success{
+                    DispatchQueue.main.async {
+                        self.statusLogin = .error //SSL Pining error
+                        return //fine xecution
+                    }
+             }
+            
+            if (success){
+                // SSL Ping OK, validate token
+                if (await loginUseCase.validateToken()){
                     self.statusLogin = .success
-                
-            } else {
-                self.statusLogin = .notValidate
+                    
+                } else {
+                    self.statusLogin = .notValidate
+                }
             }
         }
     }
